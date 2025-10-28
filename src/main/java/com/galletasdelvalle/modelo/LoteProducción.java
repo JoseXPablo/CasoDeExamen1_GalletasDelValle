@@ -9,13 +9,15 @@ package com.galletasdelvalle.modelo;
  * @author jpali
  */
 public abstract class LoteProducción {
+   
     // Atributos (privados)
     private String idLote;
-    private String tipoGalleta;        // "Avena", "Chocolate", etc.
+    private String tipoGalleta;      // "Avena", "Chocolate", etc.
     private String fechaFabricacion;   
     private int unidadesProducidas;
     private double horasFabricacion;
 
+   
     // Constructor
     public LoteProducción(String idLote, String tipoGalleta, String fechaFabricacion,
                           int unidadesProducidas, double horasFabricacion) throws Exception {
@@ -26,6 +28,7 @@ public abstract class LoteProducción {
         setHorasFabricacion(horasFabricacion);
     }
 
+   
     // Getters y Setters
     public String getIdLote() { return idLote; }
     public void setIdLote(String idLote) throws Exception {
@@ -35,6 +38,7 @@ public abstract class LoteProducción {
         this.idLote = idLote;
     }
 
+   
     public String getTipoGalleta() { return tipoGalleta; }
     public void setTipoGalleta(String tipoGalleta) throws Exception {
         if (tipoGalleta == null || tipoGalleta.equals("")) {
@@ -43,6 +47,7 @@ public abstract class LoteProducción {
         this.tipoGalleta = tipoGalleta;
     }
 
+   
     public String getFechaFabricacion() { return fechaFabricacion; }
     public void setFechaFabricacion(String fechaFabricacion) throws Exception {
         if (fechaFabricacion == null || fechaFabricacion.equals("")) {
@@ -59,6 +64,7 @@ public abstract class LoteProducción {
         this.unidadesProducidas = unidadesProducidas;
     }
 
+    
     public double getHorasFabricacion() { return horasFabricacion; }
     public void setHorasFabricacion(double horasFabricacion) throws Exception {
         if (horasFabricacion <= 0) {
@@ -67,10 +73,11 @@ public abstract class LoteProducción {
         this.horasFabricacion = horasFabricacion;
     }
 
-    // Método abstracto (polimorfismo): cada subclase define su costo
+   
+    // Método abstracto (polimorfismo)
     public abstract double calcularCostoProduccion();
 
-    // toString sencillo (para imprimir)
+    // toString sencillo
     @Override
     public String toString() {
         return idLote + " - " + tipoGalleta + " - " + fechaFabricacion +
