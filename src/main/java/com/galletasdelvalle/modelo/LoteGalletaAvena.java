@@ -5,13 +5,14 @@
 package com.galletasdelvalle.modelo;
 
 /**
+ * Universidad Fidélitas Grupo 5 Programación Cliente / Servidor Caso Número 1
  *
  * @author jpali
  */
 public class LoteGalletaAvena extends GalletaAvena implements ControlCalidad {
 
     public LoteGalletaAvena(String idLote, String fechaFabricacion,
-                            int unidadesProducidas, double horasFabricacion) throws Exception {
+            int unidadesProducidas, double horasFabricacion) throws Exception {
         super(idLote, fechaFabricacion, unidadesProducidas, horasFabricacion);
     }
 

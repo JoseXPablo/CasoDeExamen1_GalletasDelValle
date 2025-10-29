@@ -9,5 +9,7 @@ package com.galletasdelvalle.modelo;
  * @author jpali
  */
 public interface ControlCalidad {
+
     boolean inspeccionar();
+
 }
