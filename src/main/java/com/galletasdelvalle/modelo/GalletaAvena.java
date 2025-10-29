@@ -5,7 +5,7 @@
 package com.galletasdelvalle.modelo;
 
 /**
- *
+ *Subclase que representa un tipo específico de galleta: Galleta de Avena
  * @author jpali
  */
 public class GalletaAvena extends LoteProducción {
@@ -18,6 +18,7 @@ public class GalletaAvena extends LoteProducción {
 
     // Sobrescribe el método para calcular el costo total del lote
     @Override
+    // Costo de producción propio de las galletas de avena
     public double calcularCostoProduccion() {
         double costoHora = 5.0;
         double costoFijo = 20.0;

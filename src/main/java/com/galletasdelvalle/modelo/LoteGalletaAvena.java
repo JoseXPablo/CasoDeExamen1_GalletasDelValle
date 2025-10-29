@@ -6,7 +6,7 @@ package com.galletasdelvalle.modelo;
 
 /**
  * Universidad Fidélitas Grupo 5 Programación Cliente / Servidor Caso Número 1
- *
+ * Clase que combina el tipo de galleta Avena con los criterios de control de calidad.
  * @author jpali
  */
 public class LoteGalletaAvena extends GalletaAvena implements ControlCalidad {

@@ -5,7 +5,7 @@
 package com.galletasdelvalle.modelo;
 
 /**
- *
+ * Interfaz que define el contrato para aplicar controles de calidad a un lote.
  * @author jpali
  */
 public interface ControlCalidad {

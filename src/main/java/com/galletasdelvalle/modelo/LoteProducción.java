@@ -10,11 +10,19 @@ package com.galletasdelvalle.modelo;
  */
 public abstract class LoteProducción {
    
-    // Atributos (privados)
+ //Clase base que representa un lote genérico de producción de galletas.
+ //Contiene atributos comunes como ID, tipo de galleta, fecha, unidades y horas.
+    
+    
+     // Identificador único del lote
     private String idLote;
-    private String tipoGalleta;      // "Avena", "Chocolate", etc.
-    private String fechaFabricacion;   
+    // Tipo de galleta producida
+    private String tipoGalleta;  
+ // Fecha de fabricación del lote    
+    private String fechaFabricacion;  
+    // Cantidad de unidades producidas
     private int unidadesProducidas;
+     // Tiempo total de fabricación en horas
     private double horasFabricacion;
 
    

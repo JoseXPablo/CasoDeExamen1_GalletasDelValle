@@ -5,8 +5,11 @@
 package com.galletasdelvalle.modelo;
 
 /**
+ * Clase que administra todos los lotes registrados.
  *
+ * Permite agregarlos, listarlos y ordenarlos según diferentes criterios.
  * @author jpali
+ *
  */
 
 import java.util.ArrayList;
@@ -47,4 +50,7 @@ public class SistemaControl {
             System.out.println(lote.toString() + " | Costo: " + lote.calcularCostoProduccion());
         }
     }
+    public ArrayList<LoteProducción> getLotes() {
+    return lotes;
+}
 }
